@@ -15,7 +15,7 @@ function readFS(filename){
 
 app.get('/', function(request, response) {
 
-  response.send(readFS());
+  response.send(readFS(filename));
 });
 
 var port = process.env.PORT || 5000;
